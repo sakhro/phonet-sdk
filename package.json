@@ -2,9 +2,25 @@
   "name": "phonet-sdk",
   "version": "1.0.0",
   "description": "SDK for Phonet telecommunication system",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": "https://github.com/Sakhro/phonet-sdk.git",
   "author": "Sava-Danylo Sakhro (sd.sakhro@gmail.com)",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "scripts": {
+    "nodemon": "nodemon dist/index.js",
+    "tsc:watch": "tsc -w"
+  },
+  "devDependencies": {
+    "@types/node-fetch": "^2.3.7",
+    "@types/ramda": "^0.26.9",
+    "nodemon": "^1.19.1",
+    "tslint": "^5.18.0",
+    "tslint-consistent-codestyle": "^1.15.1",
+    "typescript": "^3.5.2"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "ramda": "^0.26.1"
+  }
 }
