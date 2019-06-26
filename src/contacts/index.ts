@@ -1,0 +1,1 @@
+export { searchContactByPhoneNumber } from "./contacts";

@@ -1,8 +1,8 @@
 "use strict";
-import { searchByOLNum } from "./contactsApi";
+import { searchByOLNum } from "./contactsService";
 
-export const searchContactByPhoneNumber = async (number: number) => {
-  const { data } = await searchByOLNum(number);
+export const searchContactByPhoneNumber = async (phoneNumber: number) => {
+  const { data } = await searchByOLNum(phoneNumber);
 
   return data;
 };

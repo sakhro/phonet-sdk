@@ -1,6 +1,8 @@
 "use strict";
 import { pathOr } from "ramda";
-import { fetch, handleRequest } from "../api";
+
+import { fetch, handleRequest } from "@api";
+import { API_KEY } from "@config";
 
 const setCookie = (cookie: string) => {
   if (!cookie) {
@@ -13,10 +15,10 @@ const setCookie = (cookie: string) => {
   };
 };
 
-export const authorize = async (apiKey: string) => {
+export const authorize = async () => {
   const res = await handleRequest("/rest/security/authorize", {
+    data: { apiKey: API_KEY },
     method: "post",
-    data: { apiKey },
   });
 
   setCookie(pathOr(null, ["headers", "set-cookie", 0], res));

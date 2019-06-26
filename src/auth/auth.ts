@@ -1,5 +1,5 @@
 "use strict";
-import { authorize } from "./authApi";
+import { authorize } from "./authService";
 
-export const auth = (apiKey: string) =>
-  authorize(apiKey);
+export const auth = () =>
+  authorize();
