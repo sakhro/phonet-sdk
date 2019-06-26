@@ -10,11 +10,11 @@
     "esModuleInterop": true, // Allow default imports from the lib
     "paths": {
       "@*": [
-        "src/*"
+        "lib/*"
       ],
     }
   },
   "include": [
-    "./src/**/*"
+    "./lib/**/*"
   ]
 }
