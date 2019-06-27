@@ -1,8 +1,8 @@
 "use strict";
 import { pathOr } from "ramda";
 
-import { fetch, handleRequest } from "@api";
-import { API_KEY } from "@config";
+import { fetch, handleRequest } from "@services/api";
+import { API_KEY } from "@services/config";
 
 const setCookie = (cookie: string) => {
   if (!cookie) {

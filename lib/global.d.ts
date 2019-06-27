@@ -27,3 +27,13 @@ interface IContact {
   createUserId: number;
   fields: IContactField[];
 }
+
+interface IBatchData {
+  merge: 1 | 0;
+  contacts: IContact[];
+}
+
+interface IBatchResponce {
+  succeeded: number;
+  failed: number;
+}

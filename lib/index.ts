@@ -1,8 +1,8 @@
 "use strict";
 import { auth } from "@auth";
-import { searchContactByPhoneNumber } from "@contacts";
-import { validateInitArgs } from "@helpers";
-import { subscribeToCall } from "@subscribe";
+import { validateInitArgs } from "@services/helpers";
+import * as teler from "@teler";
+import * as wss from "@wss";
 
 export default (initArgs: IInitArgs) => {
   validateInitArgs(initArgs);
@@ -10,7 +10,7 @@ export default (initArgs: IInitArgs) => {
   auth();
 
   return {
-    searchContactByPhoneNumber,
-    subscribeToCall,
+    teler,
+    wss,
   };
 };
