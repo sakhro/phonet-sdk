@@ -1,0 +1,9 @@
+{
+  "extends": [
+      "tslint:recommended",
+      "tslint-consistent-codestyle"
+  ],
+  "rules": {
+    "no-shadowed-variable": false
+  }
+}
