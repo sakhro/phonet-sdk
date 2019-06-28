@@ -11,7 +11,7 @@
 Install it:
 
 ```bash
-yarn add ...
+yarn add phonet-sdk
 ```
 
 Initialize:
