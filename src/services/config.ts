@@ -1,6 +1,4 @@
-"use strict";
-
-import { fetch } from "@services/api";
+import { fetch } from "./api";
 
 export let DOMAIN: string;
 export let API_KEY: string;

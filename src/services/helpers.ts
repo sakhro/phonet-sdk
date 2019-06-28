@@ -1,6 +1,4 @@
-"use strict";
-
-import { setInitArgs } from "@services/config";
+import { setInitArgs } from "./config";
 
 export const validateInitArgs = (args: IInitArgs) => {
   if (!args.domain) {

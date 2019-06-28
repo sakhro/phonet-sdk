@@ -1,3 +1,6 @@
+# dependencies
 /node_modules
-index.html
+
+#misc
 yarn-error.log
+index.html

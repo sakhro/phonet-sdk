@@ -1,4 +1,3 @@
-"use strict";
 import { batch, searchByOLNum } from "./contactsService";
 
 export const searchContactByPhoneNumber = async (phoneNumber: number | string) => {

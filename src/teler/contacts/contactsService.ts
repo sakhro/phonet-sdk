@@ -1,6 +1,5 @@
-"use strict";
-import { handleRequest } from "@services/api";
 import { AxiosResponse } from "axios";
+import { handleRequest } from "../../services/api";
 
 export const searchByOLNum = async (otherLegNum: number | string): Promise<AxiosResponse<IContact>> =>
   await handleRequest("/crm/contacts/v2/searchByOLNum", {

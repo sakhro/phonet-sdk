@@ -1,30 +1,28 @@
 const path = require('path');
-const { TsConfigPathsPlugin } = require('awesome-typescript-loader');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: './lib/index.ts',
+  entry: './src/index.ts',
   devServer: {
     contentBase: './dist'
   },
+  optimization: {
+		minimize: false
+	},
   module: {
     rules: [
       {
         test: /\.tsx?$/,
-        use: 'awesome-typescript-loader',
+        use: 'ts-loader',
         exclude: /node_modules/
       }
     ]
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".json"],
-    plugins: [
-      // To handle path modules
-      new TsConfigPathsPlugin()
-    ]
   },
   output: {
-    filename: 'phonet.js',
+    filename: 'index.js',
     path: path.resolve(__dirname, 'dist')
   },
   plugins: [
