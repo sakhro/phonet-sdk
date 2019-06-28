@@ -1,12 +1,6 @@
 # dependencies
 /node_modules
 
-# development
-webpack.config.js
-/src
-tslint.json
-tsconfig.json
-
 #misc
 yarn-error.log
 index.html
