@@ -1,6 +1,6 @@
 {
   "name": "phonet-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "SDK for Phonet telecommunication system",
   "main": "dist/index.js",
   "repository": "https://github.com/Sakhro/phonet-sdk.git",
