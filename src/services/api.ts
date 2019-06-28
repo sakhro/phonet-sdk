@@ -1,4 +1,3 @@
-"use strict";
 import axios from "axios";
 
 export const fetch = axios.create();
