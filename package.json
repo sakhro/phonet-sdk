@@ -1,14 +1,15 @@
 {
   "name": "phonet-sdk",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "SDK for Phonet telecommunication system",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "repository": "https://github.com/Sakhro/phonet-sdk.git",
   "author": "Sava-Danylo Sakhro (sd.sakhro@gmail.com)",
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "webpack --mode production",
+    "build": "tsc",
     "dev": "webpack-dev-server --mode development --open",
     "lint": "tslint -c tslint.json 'src/**/*.ts{,x}' 'server/**/*.ts{,x}'",
     "lint:fix": "tslint -c tslint.json 'src/**/*.ts{,x}' 'server/**/*.ts{,x}' --fix --format verbose"
@@ -29,7 +30,6 @@
   },
   "dependencies": {
     "axios": "^0.19.0",
-    "phonet-sdk": "^1.0.3",
     "ramda": "^0.26.1"
   }
 }

@@ -3,7 +3,7 @@ const { TsConfigPathsPlugin } = require('awesome-typescript-loader');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: './lib/index.ts',
+  entry: './src/index.ts',
   devServer: {
     contentBase: './dist'
   },
@@ -24,7 +24,7 @@ module.exports = {
     ]
   },
   output: {
-    filename: 'phonet.js',
+    filename: 'index.js',
     path: path.resolve(__dirname, 'dist')
   },
   plugins: [

@@ -1,20 +1,25 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
+    "outDir": "./lib/",
     "sourceMap": true,
     "noImplicitAny": true,
     "module": "commonjs",
-    "target": "es6",
+    "target": "es5",
     "baseUrl": ".",
+    "strict": true,
+    "declaration": true,
     "skipLibCheck": true,
     "esModuleInterop": true, // Allow default imports from the lib
     "paths": {
       "@*": [
-        "lib/*"
+        "src/*"
       ],
     }
   },
   "include": [
-    "./lib/**/*"
+    "./src/**/*"
+  ],
+  "exclude": [
+    "./node_modules"
   ]
 }
