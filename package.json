@@ -1,8 +1,8 @@
 {
   "name": "phonet-sdk",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "SDK for Phonet telecommunication system",
-  "main": "dist/index.js",
+  "main": "dist/phonet.js",
   "repository": "https://github.com/Sakhro/phonet-sdk.git",
   "author": "Sava-Danylo Sakhro (sd.sakhro@gmail.com)",
   "license": "MIT",
@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "axios": "^0.19.0",
+    "phonet-sdk": "^1.0.3",
     "ramda": "^0.26.1"
   }
 }
