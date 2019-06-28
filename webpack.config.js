@@ -5,7 +5,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: './src/index.ts',
   devServer: {
-    contentBase: './dist'
+    contentBase: './lib'
   },
   module: {
     rules: [
@@ -25,7 +25,7 @@ module.exports = {
   },
   output: {
     filename: 'index.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'lib')
   },
   plugins: [
     new HtmlWebPackPlugin({

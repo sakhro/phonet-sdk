@@ -1,1 +1,0 @@
-{"version":3,"file":"subscribeService.js","sourceRoot":"","sources":["../../../src/wss/subscribe/subscribeService.ts"],"names":[],"mappings":"AAAA,YAAY,CAAC;;AACb,2CAAmD;AAEtC,QAAA,SAAS,GAAG,UAAC,UAA2B;IACnD,IAAM,GAAG,GAAG,WAAS,eAAM,uCAAkC,eAAM,gBAAW,gBAAO,oBAAe,UAAY,CAAC;IAEjH,OAAO,IAAI,SAAS,CAAC,GAAG,CAAC,CAAC;AAC5B,CAAC,CAAC"}
