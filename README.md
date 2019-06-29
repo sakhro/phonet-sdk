@@ -42,10 +42,10 @@ import Phonet from 'services/phonet.js'
 
 const id = '007'
 
-const socket = await Phonet.wss.subscribe(id)
+const socket = await Phonet.wss.subscribeToCall(id)
 ```
 
-`subscribe` method recived the following properties:
+`subscribeToCall` method recived the following properties:
 
 - `id` - user id to subscribe
 
